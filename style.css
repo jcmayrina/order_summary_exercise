@@ -1,0 +1,155 @@
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+.flex-con {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border-radius: 20px;
+  background-color: white;
+  width: 25vw;
+}
+.container .imgcon img {
+  border-radius: 20px 20px 0 0;
+  width: 25vw;
+}
+.container .header {
+  text-align: center;
+  padding-top: 20px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.container .subheader {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.container .promo {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  margin: 50px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.container .promo .plan-con {
+  display: block;
+}
+.container .promo .plan-con .plan {
+  margin-left: 20px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.container .promo .plan-con .price {
+  margin-left: 20px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.container .promo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.container .promo a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.container .payment .bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px 0 15px 0;
+  margin: 0 40px 0 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0px 10px 17px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 17px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 17px -5px rgba(0, 0, 0, 0.75);
+}
+.container .payment .bg:hover {
+  color: white;
+  background-color: hsl(224, 23%, 55%);
+}
+.container .payment .nobg {
+  margin: 30px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(224, 23%, 55%);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.container .payment .nobg:hover {
+  color: hsl(223, 47%, 23%);
+}
+.container .promo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 90vw;
+  }
+  .container .imgcon img {
+    width: 90vw;
+  }
+  .container .header {
+    font-size: 25px;
+  }
+  .container .subheader {
+    font-size: 16px;
+  }
+  .container .promo {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px 5px 5px 15px;
+  }
+  .container .promo .plan-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .promo .plan-con .plan {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .container .promo .plan-con .price {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .container .promo a {
+    margin-left: 80px;
+    font-size: 14px;
+  }
+  .container .payment .bg {
+    font-size: 14px;
+  }
+  .container .payment .nobg {
+    font-size: 14px;
+  }
+}
